@@ -1,0 +1,12 @@
+
+CREATE DATABASE IF NOT EXISTS police_vehicles;
+USE police_vehicles;
+CREATE TABLE IF NOT EXISTS vehicles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    plate VARCHAR(20) NOT NULL,
+    owner VARCHAR(50) NOT NULL,
+    type VARCHAR(50) NOT NULL
+);
+
+TRUNCATE TABLE vehicles;
+ALTER TABLE vehicles AUTO_INCREMENT = 1;
